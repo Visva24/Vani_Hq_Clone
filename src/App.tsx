@@ -1,11 +1,13 @@
+
 // import Button from "./Button";
+import Card from "./Card";
 import Navbar from "./Navbar";
 
 
 const App = () => {
   return (
     <>
-       <div className="relative   ">
+        <div className="relative ">
         <img className="absolute z-10 top-44 right-24 h-10" src="./Images/vi_sparkle.svg" alt="" />
         <img className="absolute z-10 top-96 left-24 h-10" src="./Images/vi_sparkle.svg" alt="" />
        <Navbar/>
@@ -27,7 +29,10 @@ const App = () => {
        <div className="flex flex-col justify-center items-center bg-back w-[100%]  pt-24  pb-16">
         <h1 className="text-[50px] flex justify-center  mb-8">Meet.Work. <span className="text-transparent bg-clip-text bg-instagram-gradient">Catchup!</span> </h1>
         <p className="flex flex-col justify-center items-center mb-10  text-zinc-500 ">Catchups bring your team as close as they can get to creating together in person. Everybody can see each other, talk,<span> create, and meet without losing context or having to switch screens.</span></p>
-        <button className="border  border-gray-800 p-14 py-3 rounded-full hover:text-blue-700 ">Learn more</button>
+        <div className="bg-instagram-gradient p-[2px] rounded-full">
+        <button className="bg-white p-14 py-3 rounded-full hover:text-blue-700 ">Learn more</button>
+        </div>
+        
         <img src="./Images/one.web" alt="" className="h-4 absolute right-[560px] " />
        </div>
        <div className=" relative w-[100%]  ">
@@ -49,7 +54,12 @@ const App = () => {
         <h1 className="text-[30px] mb-3">Play shouldn't feel like work.</h1>
         <p className=" flex flex-col justify-center items-center text-sm  text-zinc-500">Replace back-to-back Slack messages, flooded email inboxes, boring Zoom meets, and daily standups with an infinite <span>canvas where everybody can express themselves freely.</span> </p>
        </div>
+       <div className="flex justify-center gap-10 items-center py-20">
+       <Card/>
+       {/* <Button/> */}
        </div>
+       </div> 
+       
        
     </>
    

@@ -32,8 +32,8 @@ const Navbar = () => {
             <a className="hover:text-blue-800 text-gray-600" href="">Pricing</a>
             <a className="hover:text-blue-800 text-gray-600" href="">Help</a>
             <a className="hover:text-blue-800 text-gray-600" href="">Sign in</a>
-            
-            <a className=" border h-[35px] transition duration-300 ring ring-pink-500 ring-offset-0 ease-in bg-white rounded-full text-gray-600 hover:text-white hover:bg-instagram-gradient px-4 py-1" href="">Sign up</a>
+            <div className='bg-instagram-gradient rounded-full p-[2px]'> <a className="  transition duration-300  ease-in bg-white rounded-full text-gray-600 hover:text-white hover:bg-instagram-gradient px-4 py-1" href="">Sign up</a></div>
+           
             </div>
             
            {/* <button className="flex items-center border border-y-green-500 h-[35px] rounded-2xl px-4 py-1">Sign up</button> */}
